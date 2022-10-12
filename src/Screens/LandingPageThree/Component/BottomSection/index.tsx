@@ -7,7 +7,7 @@ import Colors from '../../../../Constants/Colors';
 const BottomSection = ({navigation}: any) => {
 
     const onFinishPress = () => {
-        navigation.navigate("LandingPageThree")
+        navigation.replace("Login")
     }
     const onBackPress = () => {
         navigation.navigate("LandingPageTwo")

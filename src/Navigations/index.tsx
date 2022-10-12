@@ -8,6 +8,10 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import LandingPageOne from '../Screens/LandingPageOne';
 import LandingPageTwo from '../Screens/LandingPageTwo';
 import LandingPageThree from '../Screens/LandingPageThree';
+import LoginScreen from '../Screens/LoginScreen';
+import SignupScreen from '../Screens/SignupScreen';
+import ResetPasswordScreen from '../Screens/ResetPasswordScreen';
+import HomeScreen from '../Screens/HomeScreen';
 
 
 const Stack = createStackNavigator();
@@ -24,6 +28,10 @@ const Navigation = () => {
         <Stack.Screen name='LandingPageOne' component={LandingPageOne} />
         <Stack.Screen name='LandingPageTwo' component={LandingPageTwo} />
         <Stack.Screen name='LandingPageThree' component={LandingPageThree} />
+        <Stack.Screen name='Login' component={LoginScreen} />
+        <Stack.Screen name='Signup' component={SignupScreen} />
+        <Stack.Screen name='ResetPassword' component={ResetPasswordScreen} />
+        <Stack.Screen name='Home' component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
