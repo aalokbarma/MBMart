@@ -35,4 +35,5 @@ export default {
     roseRed: "#b43757",
     valentineRed: "#c80815",
     waterMelon: "#fc7676",
+    transparent: 'transparent',
 }
