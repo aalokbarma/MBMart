@@ -6,7 +6,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const LandingPageHeader = ({navigation}: any) => {
 
   const onSkipPress = () => {
-    navigation.replace("Login")
+    navigation.navigate("Login")
   }
 
   return (

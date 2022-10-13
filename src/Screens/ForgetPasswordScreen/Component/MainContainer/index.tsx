@@ -14,19 +14,15 @@ const MainContainer = ({navigation}: any) => {
         passwordVisible ? setPasswordVisible(false) : setPasswordVisible(true)
     }
 
-    const onSignupPress = () => {
-        navigation.navigate("Signup")
-    }
-
-    const onForgetPasswordPress = () => {
-        navigation.navigate("ForgetPassword")
+    const onLoginPress = () => {
+        navigation.navigate("Login")
     }
 
   return (
     <View style = {Styles.mainContainer}>
       <ScrollView style = {Styles.loginScrollView}>
         <View style = {Styles.loginHeader}>
-            <Text style = {Styles.headerText}>Login</Text>
+            <Text style = {Styles.headerText}>Forget Password</Text>
         </View>
         <View style = {Styles.mainForm}>
             <View style = {Styles.inputRow}>
@@ -39,7 +35,7 @@ const MainContainer = ({navigation}: any) => {
                     placeholderTextColor={Colors.tomato}
                 />
             </View>
-            <View style = {[Styles.inputRow,{marginBottom: 10}]}>
+            {/* <View style = {[Styles.inputRow,{marginBottom: 10}]}>
                 <TextInput 
                     style = {[Styles.inputField, Styles.passwordInput]}
                     value = {password}
@@ -56,22 +52,22 @@ const MainContainer = ({navigation}: any) => {
                     }
                 </TouchableOpacity>
                 
-            </View>
-            <View style=  {Styles.forgetContainer}>
-                <TouchableOpacity style = {Styles.forgetTouchable} onPress = {onForgetPasswordPress}>
+            </View> */}
+            {/* <View style=  {Styles.forgetContainer}>
+                <TouchableOpacity style = {Styles.forgetTouchable}>
                     <Text style = {Styles.forgetText}>Forget password?</Text>
                 </TouchableOpacity>
-            </View>
+            </View> */}
             <View style = {Styles.loginButtonContainer}>
                 <TouchableOpacity style = {[Styles.loginButton, {backgroundColor: Colors.maroon}]}>
-                    <Text style = {Styles.loginButtonText}>Login</Text>
+                    <Text style = {Styles.loginButtonText}>Send Email</Text>
                 </TouchableOpacity>
             </View>
             <View style = {Styles.emptyView} />
             <View style = {Styles.signupLinkContainer}>
-                <Text style = {Styles.alreadyText}>Already have an account?</Text>
-                <TouchableOpacity style = {Styles.signupLink} onPress = {onSignupPress}>
-                    <Text style = {Styles.signupLinkText}>Sign Up</Text>
+                <Text style = {Styles.alreadyText}>Back to</Text>
+                <TouchableOpacity style = {Styles.signupLink} onPress = {onLoginPress}>
+                    <Text style = {Styles.signupLinkText}>Login</Text>
                 </TouchableOpacity>
             </View>
         </View>
