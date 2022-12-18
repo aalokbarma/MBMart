@@ -2,7 +2,6 @@ import { View, Text, ScrollView, TextInput, TouchableOpacity } from 'react-nativ
 import React, { useState } from 'react';
 import Styles from './styles';
 import Colors from '../../../../Constants/Colors';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const MainContainer = ({navigation}: any) => {
 
